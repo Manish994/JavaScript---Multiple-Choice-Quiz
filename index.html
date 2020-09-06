@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Multiple Choice Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!------------- First Section Starts ---------------->
+      <div id="start">Start Quiz!</div>
+      <!------------- First Section Ends ------------------>
+      <!------------- Second Section Starts ---------------->
+      <div id="quiz" style="display: none">
+        <!---->
+        <div id="question"></div>
+        <!---->
+        <div id="qImg"></div>
+        <!---->
+        <div id="choices">
+          <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+          <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+          <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+        </div>
+        <!---->
+        <div id="timer">
+          <div id="counter"></div>
+          <div id="btimeGauge"></div>
+          <div id="timeGauge"></div>
+        </div>
+        <!---->
+        <div id="progress"></div>
+        <!---->
+      </div>
+      <!------------- Second Section Ends ---------------->
+      <!------------- Third Section Starts ---------------->
+      <div id="scoreContainer" style="display: none"></div>
+    </div>
+    <script src="quiz.js"></script>
+  </body>
+</html>
